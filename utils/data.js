@@ -1,0 +1,95 @@
+import bcrypt from 'bcryptjs';
+
+const data = {
+  users: [
+    {
+      name: 'John', //admin user
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'Jane', //normal user
+      email: 'user@example.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: 'false',
+    },
+  ],
+
+  products: [
+    //1st product
+    {
+      name: 'Free Shirt',
+      slug: 'free-shirt',
+      category: 'Shirts',
+      image: '/images/shirt1.jpg',
+      price: 70,
+      brand: 'Nike',
+      rating: 4.5,
+      numReviews: 8,
+      countInStock: 20,
+      description: 'A popluar shirt',
+    },
+    {
+      name: 'Fit Shirt',
+      slug: 'fit-shirt',
+      category: 'Shirts',
+      image: '/images/shirt2.jpg',
+      price: 80,
+      brand: 'Adidas',
+      rating: 4.0,
+      numReviews: 10,
+      countInStock: 20,
+      description: 'A popluar shirt',
+    },
+    {
+      name: 'Slim Shirt',
+      slug: 'slim-shirt',
+      category: 'Shirts',
+      image: '/images/shirt3.jpg',
+      price: 90,
+      brand: 'Raymond',
+      rating: 4.0,
+      numReviews: 10,
+      countInStock: 20,
+      description: 'A popluar shirt',
+    },
+    {
+      name: 'Golf Pants',
+      slug: 'golf-pants',
+      category: 'Pants',
+      image: '/images/pants1.jpg',
+      price: 90,
+      brand: 'Oliver',
+      rating: 2.9,
+      numReviews: 13,
+      countInStock: 20,
+      description: 'Smart looking pants',
+    },
+    {
+      name: 'Fit Pants',
+      slug: 'fit-pants',
+      category: 'Pants',
+      image: '/images/pants3.jpg',
+      price: 95,
+      brand: 'Zara',
+      rating: 5.2,
+      numReviews: 7,
+      countInStock: 20,
+      description: 'Smart looking pants',
+    },
+    {
+      name: 'Classic Pants',
+      slug: 'classic-pants',
+      category: 'Pants',
+      image: '/images/pants2.jpg',
+      price: 95,
+      brand: 'Casely',
+      rating: 5.2,
+      numReviews: 7,
+      countInStock: 20,
+      description: 'Smart looking pants',
+    },
+  ],
+};
+export default data;
